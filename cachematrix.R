@@ -1,7 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
 ## The following 2 functions allow to calculate the inverse of a matrix which 
 ## is subsequenly stored in cache
 
@@ -9,7 +5,6 @@
 ## - for setting/getting values of a matrix
 ## - for setting/getting the inverse of the matrix
 makeCacheMatrix <- function(x = matrix()) {
-
   inverse<-NULL
   
   set<-function(y){
@@ -25,14 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
-## This function calculates the inverse of a matrix created 
-## by the "makeCacheMatrix" function
-## If the inverse of a matrix already exists, then this function gets the inverse 
-## from the cache
+## This function calculates the inverse of a matrix created by the "makeCacheMatrix" function
+## If the inverse of a matrix already exists, then this function gets the inverse from the cache
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
   inverse<-x$getInverse()
     if(!is.null(inverse)) {
       inverse
